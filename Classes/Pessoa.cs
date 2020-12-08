@@ -1,0 +1,12 @@
+namespace AulaPOO_Heranca.Classes
+{
+    public class Pessoa
+    {
+        public string nome;
+
+        public string DarBoasVindas(string nomeUsuario)
+        {
+            return "Olá " +nomeUsuario+ "! Seja Bem Vindo(a) a meu sistema";
+        }
+    }
+}

@@ -1,4 +1,5 @@
 ﻿using System;
+using AulaPOO_Heranca.Classes;
 
 namespace AulaPOO_Heranca
 {
@@ -6,7 +7,15 @@ namespace AulaPOO_Heranca
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            PessoaFisica pf = new PessoaFisica();
+
+            pf.cpf = "000.000.000-00";
+
+            pf.nome = "Alan";
+
+            Console.WriteLine( pf.DarBoasVindas(pf.nome) );
+
+            Console.WriteLine( pf.ValidarCpf(pf.cpf) );
         }
     }
 }
